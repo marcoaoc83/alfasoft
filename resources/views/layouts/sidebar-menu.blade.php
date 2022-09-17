@@ -9,14 +9,14 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
-        <router-link to="/products" class="nav-link">
-          <i class="nav-icon fas fa-list orange"></i>
-          <p>
-            Product
-          </p>
-        </router-link>
-      </li>
+        <li class="nav-item">
+            <router-link to="/contacts" class="nav-link">
+                <i class="nav-icon fas fa-list orange"></i>
+                <p>
+                    Contact
+                </p>
+            </router-link>
+        </li>
 
       @can('isAdmin')
         <li class="nav-item">
@@ -27,50 +27,7 @@
         </li>
       @endcan
 
-      
 
-      @can('isAdmin')
-      <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-cog green"></i>
-          <p>
-            Settings
-            <i class="right fas fa-angle-left"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-
-          <li class="nav-item">
-            <router-link to="/product/category" class="nav-link">
-              <i class="nav-icon fas fa-list-ol green"></i>
-              <p>
-                Category
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/product/tag" class="nav-link">
-              <i class="nav-icon fas fa-tags green"></i>
-              <p>
-                Tags
-              </p>
-            </router-link>
-          </li>
-          
-            <li class="nav-item">
-              <router-link to="/developer" class="nav-link">
-                  <i class="nav-icon fas fa-cogs white"></i>
-                  <p>
-                      Developer
-                  </p>
-              </router-link>
-            </li>
-        </ul>
-      </li>
-
-      @endcan
-      
-      
 
       <li class="nav-item">
         <a href="#" class="nav-link" onclick="event.preventDefault();
